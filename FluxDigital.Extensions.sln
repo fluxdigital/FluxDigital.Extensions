@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxDigital.Extensions.Web", "FluxDigital.Extensions.Web\FluxDigital.Extensions.Web.csproj", "{8C7236FE-E493-4F6A-9B6E-55F489E46985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxDigital.Extensions.Core", "FluxDigital.Extensions.Core\FluxDigital.Extensions.Core.csproj", "{BF91A7DE-2360-478B-B052-99D3032E50A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C7236FE-E493-4F6A-9B6E-55F489E46985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7236FE-E493-4F6A-9B6E-55F489E46985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7236FE-E493-4F6A-9B6E-55F489E46985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7236FE-E493-4F6A-9B6E-55F489E46985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF91A7DE-2360-478B-B052-99D3032E50A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF91A7DE-2360-478B-B052-99D3032E50A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF91A7DE-2360-478B-B052-99D3032E50A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF91A7DE-2360-478B-B052-99D3032E50A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0261B515-C8D7-484C-BDD5-63DAD4CDBC29}
+	EndGlobalSection
+EndGlobal
