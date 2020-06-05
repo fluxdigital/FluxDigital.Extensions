@@ -32,18 +32,12 @@ namespace FluxDigital.Extensions.Core.Pipelines.PageEditorNotifications
                     showHelpTextForTemplate = true;
                 }
             }
-            
-            //var bullet1 = "Ensure you add an image to the hero if you have one.";
-            //var bullet2 = "Remove any other content sections that you don't need.";
+
             if (showHelpTextForTemplate)
             {
                 var intro = $"<b>This page is the {templateName} Template. Please follow the guidance below: </b>";
-                //var bullets = $"<ul><li>{bullet1}</li><li>{bullet2}</li></ul>";
-                //Enum PageEditorNotificationType(){Error,Information,Warning}
                 var pageEditorNotificationType = new PageEditorNotificationType() { };
-                var notification = new PageEditorNotification($"{intro}{helpText}",
-                    (PageEditorNotificationType) ExtendedPageEditorNotificationType.Information);
-                //notification.Options.Add(new PageEditorNotificationOption("testing", "testing"));
+                var notification = new PageEditorNotification($"{intro}{helpText}", (PageEditorNotificationType) ExtendedPageEditorNotificationType.Information);
                 arguments.Notifications.Add(notification);
             }
         }
