@@ -76,6 +76,7 @@
     <Content Include="App_Config\Include\FluxDigital\xFluxDigital.Extensions.Core.ShowExperienceEditorHelpNotifications.config" />
     <None Include="packages.config" />
     <Content Include="sitecore\Shell\client\Business Component Library\Layouts\Renderings\Common\MessageBars\HtmlMessageBar.cshtml" />
+    <Content Include="sitecore\Shell\Themes\Standard\Sauron.zip" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -89,6 +90,7 @@
       <Name>FluxDigital.Extensions.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
