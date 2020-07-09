@@ -1,4 +1,5 @@
-﻿using FluxDigital.Extensions.Core.Enums;
+﻿using System.Web.UI;
+using FluxDigital.Extensions.Core.Enums;
 using FluxDigital.Extensions.Core.Services;
 using Sitecore.Configuration;
 using Sitecore.Data.Fields;
@@ -27,19 +28,21 @@ namespace FluxDigital.Extensions.Core.Pipelines.PageEditorNotifications
             var sauronPageTemplateFieldName = Settings.GetSetting("SauronPageTemplateFieldName");
             var sauronRootItem = contextItem.Database.GetItem(sauronRootItemId);
             MultilistField sauronTemplateRoots = sauronRootItem.Fields[sauronPageTemplateFieldName];
+            showHelpTextForTemplate = !string.IsNullOrEmpty(helpText);
 
-            foreach (var path in sauronTemplateRoots.GetItems())
-            {
-                if (PageTemplateItem.Paths.FullPath.ToLower().Contains(path.Paths.FullPath.ToLower()))
-                {
-                    showHelpTextForTemplate = true;
-                }
-            }
+            //foreach (var path in sauronTemplateRoots.GetItems())
+            //{
+            //    if (PageTemplateItem.Paths.FullPath.ToLower().Contains(path.Paths.FullPath.ToLower()) && !string.IsNullOrEmpty(helpText))
+            //    {
+            //        showHelpTextForTemplate = true;
+            //    }
+            //}
 
             if (showHelpTextForTemplate)
             {
+                //add page editor notification
                 var pageEditorNotificationType = new PageEditorNotificationType();
-                var notification = new PageEditorNotification($"{string.Format(intro, templateName)}{helpText}",  (PageEditorNotificationType) ExtendedPageEditorNotificationType.Information);
+                var notification = new PageEditorNotification($"<div class=\"sauron-page-editor-notification\">{string.Format(intro, templateName)}{helpText}</div>",  (PageEditorNotificationType) ExtendedPageEditorNotificationType.Information);
                 arguments.Notifications.Add(notification);
             }
         }

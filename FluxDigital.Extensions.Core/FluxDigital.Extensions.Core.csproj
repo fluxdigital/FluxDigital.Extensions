@@ -43,6 +43,9 @@
     <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Mvc.NoReferences.8.2.180406\lib\NET452\Sitecore.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Mvc.ExperienceEditor, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Mvc.ExperienceEditor.NoReferences.8.2.180406\lib\NET452\Sitecore.Mvc.ExperienceEditor.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -55,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\ExtendedPageEditorNotificationType.cs" />
+    <Compile Include="Pipelines\PageExtender\RenderSauronPageExtender.cs" />
     <Compile Include="Services\PageEditorNotificationsService.cs" />
     <Compile Include="Pipelines\PageEditorNotifications\RenderHtmlWebEditRibbonForm.cs" />
     <Compile Include="Pipelines\PageEditorNotifications\ShowExperienceEditorHelpNotifications.cs" />

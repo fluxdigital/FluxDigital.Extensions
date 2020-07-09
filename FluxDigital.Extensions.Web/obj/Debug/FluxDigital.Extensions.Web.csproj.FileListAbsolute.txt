@@ -63,3 +63,5 @@ C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Web\bin\Sitecore.Clien
 C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Web\bin\Newtonsoft.Json.dll
 C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Web\bin\FluxDigital.Extensions.Core.pdb
 C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Web\obj\Debug\FluxDigital.Extensions.Web.csproj.CoreCompileInputs.cache
+C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Web\bin\Sitecore.Mvc.dll
+C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Web\bin\Sitecore.Mvc.ExperienceEditor.dll

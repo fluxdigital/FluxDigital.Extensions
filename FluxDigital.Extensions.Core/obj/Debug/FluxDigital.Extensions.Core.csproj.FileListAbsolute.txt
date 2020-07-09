@@ -10,3 +10,4 @@ C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Core\bin\Debug\Sitecor
 C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Core\bin\Debug\Sitecore.ExperienceEditor.dll
 C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Core\bin\Debug\Sitecore.Mvc.dll
 C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Core\obj\Debug\FluxDigital.Extensions.Core.csproj.CoreCompileInputs.cache
+C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Core\bin\Debug\Sitecore.Mvc.ExperienceEditor.dll
