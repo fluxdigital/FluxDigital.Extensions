@@ -8,10 +8,14 @@
     vertical-align: top !important;
 }
 
+.sauron-alert-info .close {
+    color: #d78c04;
+}
+
 .sauron-alert-info .alert-ico {
     display: inline-block !important;
     vertical-align: top !important;
-    background: transparent url('/sitecore modules/Sauron/assets/sauron-icon.png') no-repeat !important;
+    background: transparent url('/sitecore modules/Sauron/assets/sauron-icon-oval.png') no-repeat !important;
     height: 32px !important;
     width: 32px !important;
     margin-top: 10px !important;

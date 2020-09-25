@@ -12,6 +12,10 @@ namespace FluxDigital.Extensions.Core.Pipelines.PageEditorNotifications
     {
         public PageEditorNotificationsService PageEditorNotificationsService = new PageEditorNotificationsService();
 
+        /// <summary>
+        /// Creates and displays the page editor notification
+        /// </summary>
+        /// <param name="arguments"></param>
         public override void Process(GetPageEditorNotificationsArgs arguments)
         {
             Assert.ArgumentNotNull(arguments, "arguments");
@@ -21,27 +25,12 @@ namespace FluxDigital.Extensions.Core.Pipelines.PageEditorNotifications
             var templateName = contextItem.TemplateName;
             var templateId = contextItem.TemplateID;
             var helpText = PageEditorNotificationsService.GetPageEditorNotification(templateId);
-            var PageTemplateItem = contextItem.Database.GetItem(contextItem.TemplateID);
-            var showHelpTextForTemplate = false;
             var intro = Settings.GetSetting("SauronPageInfoIntro");
-            var sauronRootItemId = Settings.GetSetting("SauronRootItemId");
-            var sauronPageTemplateFieldName = Settings.GetSetting("SauronPageTemplateFieldName");
-            var sauronRootItem = contextItem.Database.GetItem(sauronRootItemId);
-            MultilistField sauronTemplateRoots = sauronRootItem.Fields[sauronPageTemplateFieldName];
-            showHelpTextForTemplate = !string.IsNullOrEmpty(helpText);
 
-            //foreach (var path in sauronTemplateRoots.GetItems())
-            //{
-            //    if (PageTemplateItem.Paths.FullPath.ToLower().Contains(path.Paths.FullPath.ToLower()) && !string.IsNullOrEmpty(helpText))
-            //    {
-            //        showHelpTextForTemplate = true;
-            //    }
-            //}
-
-            if (showHelpTextForTemplate)
+            if (!string.IsNullOrEmpty(helpText))
             {
                 //add page editor notification
-                var pageEditorNotificationType = new PageEditorNotificationType();
+                //var pageEditorNotificationType = new PageEditorNotificationType();
                 var notification = new PageEditorNotification($"<div class=\"sauron-page-editor-notification\">{string.Format(intro, templateName)}{helpText}</div>",  (PageEditorNotificationType) ExtendedPageEditorNotificationType.Information);
                 arguments.Notifications.Add(notification);
             }

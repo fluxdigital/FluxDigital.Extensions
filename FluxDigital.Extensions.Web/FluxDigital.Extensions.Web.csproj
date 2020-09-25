@@ -67,7 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="sitecore modules\Sauron\assets\sauron-icon.png" />
+    <Content Include="sitecore modules\Sauron\assets\sauron-icon-circle.png" />
+    <Content Include="sitecore modules\Sauron\assets\sauron-icon-oval.png" />
     <Content Include="sitecore modules\Sauron\scripts\pipelines\InjectSauronExperienceEditorAssets.js" />
     <Content Include="sitecore modules\Sauron\scripts\sauron-page-editor.js" />
     <Content Include="sitecore modules\Sauron\styles\sauron-page-editor.css" />
