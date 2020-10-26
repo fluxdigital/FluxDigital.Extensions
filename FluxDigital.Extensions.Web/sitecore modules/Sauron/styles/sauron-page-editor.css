@@ -1,5 +1,5 @@
 ﻿.sauron-alert-info {
-    background-color: #f8dfb2 !important;
+    background-color: #faebd0 !important;
     color: #eb9b0b !important;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .sauron-alert-info .close {
-    color: #d78c04;
+    color: #d78c04 !important;
 }
 
 .sauron-alert-info .alert-ico {

@@ -7,6 +7,8 @@ using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using System.Runtime.Caching;
+using Sitecore.Collections;
+using Sitecore.Data.Managers;
 
 namespace FluxDigital.Extensions.Core.Services
 {
@@ -36,7 +38,7 @@ namespace FluxDigital.Extensions.Core.Services
             if (pageHelpMessageItems == null)
             {
                 //if not in cache then read from Sitecore
-                pageHelpMessageItems = basePageConfigItem?.Axes?.GetDescendants()?.Where(i => (i.TemplateID == sauronPageTemplateGuid && int.Parse(i.Fields[enabledfieldName].Value) == 1)).ToList();
+                pageHelpMessageItems = GetHelpItemsRecursive(basePageConfigItem, 1, sauronPageTemplateGuid, enabledfieldName);
 
                 CacheItemPolicy policy = new CacheItemPolicy();
                 policy.AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(cacheTimeInMinutes);
@@ -49,6 +51,33 @@ namespace FluxDigital.Extensions.Core.Services
             }
             
             return helpText;
+        }
+
+        /// <summary>
+        /// This method should be fairly performant as is scoped to a single folder and it's child items
+        /// TODO: consider adding support here for a content item query
+        /// </summary>
+        /// <param name="basePageConfigItem"></param>
+        /// <param name="sauronPageTemplateGuid"></param>
+        /// <param name="enabledfieldName"></param>
+        /// <returns></returns>
+        public static List<Item> GetHelpItemsRecursive(Item item, int count, ID sauronPageTemplateGuid, string enabledfieldName)
+        {
+            var helpItems = new List<Item>();
+            for (int i = 0; i < count; i++)
+            {
+                var itemChildren = item.Children;
+                var items = itemChildren.Where(itemChild => TemplateManager.GetTemplate(itemChild).InheritsFrom(sauronPageTemplateGuid) && int.Parse(itemChild.Fields[enabledfieldName].Value) == 1);
+                helpItems.AddRange(items);
+                foreach (Item subItemChild in itemChildren)
+                {
+                    if (subItemChild.HasChildren)
+                    {
+                        helpItems.AddRange(GetHelpItemsRecursive(subItemChild, 1, sauronPageTemplateGuid, enabledfieldName));
+                    }
+                }
+            }
+            return helpItems;
         }
     }
 }
