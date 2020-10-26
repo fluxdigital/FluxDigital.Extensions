@@ -70,6 +70,7 @@
     <Content Include="sitecore modules\Sauron\scripts\pipelines\InjectSauronExperienceEditorAssets.js" />
     <Content Include="sitecore modules\Sauron\scripts\sauron-page-editor.js" />
     <Content Include="sitecore modules\Sauron\styles\sauron-page-editor.css" />
+    <Content Include="SitecorePackage\sauron-icon-128x128.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +81,7 @@
     <None Include="packages.config" />
     <Content Include="sitecore\Shell\client\Business Component Library\Layouts\Renderings\Common\MessageBars\HtmlMessageBar.cshtml" />
     <Content Include="sitecore\Shell\Themes\Standard\Sauron.zip" />
+    <Content Include="Sauron.nuspec" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

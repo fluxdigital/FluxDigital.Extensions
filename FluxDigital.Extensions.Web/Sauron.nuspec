@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Sitecore-Sauron</id>
+    <version>1.0.0</version>
+    <title>Sitecore Sauron</title>
+    <authors>Adam Seabridge</authors>
+    <owners>Adam Seabridge</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/fluxdigital/FluxDigital.Extensions</projectUrl>
+    <icon>content\SitecorePackage\sauron-icon-128x128.png</icon>
+    <description>Sauron allows you to display custom messages to Content Editors in Experience Editor to describe further information about how to use a specific Page Template.</description>
+    <releaseNotes>Intial Release</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>sitecore sauron experience-editor</tags>
+  </metadata>
+  <files>
+    <file src="App_Config\**" target="content\App_Config" />
+    <file src="bin\FluxDigital.Extensions.Core.dll" target="content\bin" />
+    <file src="sitecore\Shell\**" target="content\sitecore\Shell" />
+    <file src="sitecore modules\Sauron\**" target="content\sitecore modules\Sauron" />
+    <file src="SitecorePackage\**" target="content\SitecorePackage" />
+  </files>
+</package>
