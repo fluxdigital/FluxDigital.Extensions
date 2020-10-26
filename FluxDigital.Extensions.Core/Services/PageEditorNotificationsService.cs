@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web.UI.WebControls;
 using Sitecore;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using System.Runtime.Caching;
-using Sitecore.Collections;
+using FluxDigital.Extensions.Core.Constants;
 using Sitecore.Data.Managers;
 
 namespace FluxDigital.Extensions.Core.Services
@@ -28,12 +27,11 @@ namespace FluxDigital.Extensions.Core.Services
             var sauronPageTemplateGuid = new ID(sauronPageTemplateId ?? "{948B6791-82E9-42A8-87A1-2F3F6B55ED93}");
             var templateIdFieldName = Settings.GetSetting("SauronPageTemplateIdFieldName") ?? "Template";
             var enabledfieldName = Settings.GetSetting("SauronPageEnableFieldName") ?? "Enable";
-            var configItemsCacheKey = "sauron-help-config-items";
             var cacheTimeInMinutes = Settings.GetIntSetting("SauronCacheTimeMins", 5);
 
             //get enabled help text items
             var sauronCache = MemoryCache.Default;
-            var pageHelpMessageItems = (List<Item>)sauronCache[configItemsCacheKey];
+            var pageHelpMessageItems = (List<Item>)sauronCache[SauronConstants.ConfigItemsCacheKey];
 
             if (pageHelpMessageItems == null)
             {
@@ -42,7 +40,7 @@ namespace FluxDigital.Extensions.Core.Services
 
                 CacheItemPolicy policy = new CacheItemPolicy();
                 policy.AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(cacheTimeInMinutes);
-                sauronCache.Set(configItemsCacheKey, pageHelpMessageItems, policy);
+                sauronCache.Set(SauronConstants.ConfigItemsCacheKey, pageHelpMessageItems, policy);
             }
             var pageHelpTextItem = pageHelpMessageItems?.Find(i => i.Fields[templateIdFieldName].Value == pageTemplateId.ToString());
             if (pageHelpTextItem != null)
@@ -67,7 +65,7 @@ namespace FluxDigital.Extensions.Core.Services
             for (int i = 0; i < count; i++)
             {
                 var itemChildren = item.Children;
-                var items = itemChildren.Where(itemChild => TemplateManager.GetTemplate(itemChild).InheritsFrom(sauronPageTemplateGuid) && int.Parse(itemChild.Fields[enabledfieldName].Value) == 1);
+                var items = itemChildren.Where(itemChild => TemplateManager.GetTemplate(itemChild).ID == sauronPageTemplateGuid && int.Parse(itemChild.Fields[enabledfieldName].Value) == 1);
                 helpItems.AddRange(items);
                 foreach (Item subItemChild in itemChildren)
                 {

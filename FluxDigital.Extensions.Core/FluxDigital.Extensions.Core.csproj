@@ -58,10 +58,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\SauronConstants.cs" />
     <Compile Include="Enums\ExtendedPageEditorNotificationType.cs" />
-    <Compile Include="Pipelines\PageExtender\RenderSauronPageExtender.cs" />
+    <Compile Include="Events\OnHelpTextItemSavedHandler.cs" />
     <Compile Include="Services\PageEditorNotificationsService.cs" />
-    <Compile Include="Pipelines\PageEditorNotifications\RenderHtmlWebEditRibbonForm.cs" />
     <Compile Include="Pipelines\PageEditorNotifications\ShowExperienceEditorHelpNotifications.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
