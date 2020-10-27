@@ -28,7 +28,7 @@ namespace FluxDigital.Extensions.Core.Pipelines.PageEditorNotifications
             if (!string.IsNullOrEmpty(helpText))
             {
                 //add page editor notification
-                //var pageEditorNotificationType = new PageEditorNotificationType();
+                //var pageEditorNotificationType = new PageEditorNotificationType(); //TODO: ideally we would set a custom type here and make the view aware of it
                 var notification = new PageEditorNotification($"<div class=\"sauron-page-editor-notification\">{string.Format(intro, templateName)}{helpText}</div>",  (PageEditorNotificationType) ExtendedPageEditorNotificationType.Information);
                 arguments.Notifications.Add(notification);
             }

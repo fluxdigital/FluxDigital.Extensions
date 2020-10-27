@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Sitecore;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using System.Runtime.Caching;
+using System.Timers;
 using FluxDigital.Extensions.Core.Constants;
 using Sitecore.Data.Managers;
+using Sitecore.Diagnostics;
 
 namespace FluxDigital.Extensions.Core.Services
 {
@@ -36,12 +39,16 @@ namespace FluxDigital.Extensions.Core.Services
             if (pageHelpMessageItems == null)
             {
                 //if not in cache then read from Sitecore
+                //Stopwatch sw = new Stopwatch();
+                //sw.Start();
                 pageHelpMessageItems = GetHelpItemsRecursive(basePageConfigItem, 1, sauronPageTemplateGuid, enabledfieldName);
-
+                //sw.Stop();
+                //Log.Info($"Query to get Sauron page help text items took: {sw.Elapsed.TotalMilliseconds}", this.GetType());
                 CacheItemPolicy policy = new CacheItemPolicy();
                 policy.AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(cacheTimeInMinutes);
                 sauronCache.Set(SauronConstants.ConfigItemsCacheKey, pageHelpMessageItems, policy);
             }
+            //get top one matching item
             var pageHelpTextItem = pageHelpMessageItems?.Find(i => i.Fields[templateIdFieldName].Value == pageTemplateId.ToString());
             if (pageHelpTextItem != null)
             {
@@ -52,7 +59,8 @@ namespace FluxDigital.Extensions.Core.Services
         }
 
         /// <summary>
-        /// This method should be fairly performant as is scoped to a single folder and it's child items
+        /// This method should be performant as is scoped to a single folder and it's child items
+        /// Tests show it takes 120.3908 miliseconds to query all 378 test items when uncached.
         /// TODO: consider adding support here for a content item query
         /// </summary>
         /// <param name="basePageConfigItem"></param>
