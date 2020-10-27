@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FluxDigital.Extensions.Web</RootNamespace>
-    <AssemblyName>FluxDigital.Extensions.Web</AssemblyName>
+    <RootNamespace>FluxDigital.Extensions.Sauron.Web</RootNamespace>
+    <AssemblyName>FluxDigital.Extensions.Sauron.Web</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -77,7 +77,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\FluxDigital\xFluxDigital.Extensions.Core.Sauron.config" />
+    <Content Include="App_Config\Include\FluxDigital\xFluxDigital.Extensions.Sauron.config" />
     <None Include="packages.config" />
     <Content Include="sitecore\Shell\client\Business Component Library\Layouts\Renderings\Common\MessageBars\HtmlMessageBar.cshtml" />
     <Content Include="sitecore\Shell\Themes\Standard\Sauron.zip" />
@@ -90,9 +90,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FluxDigital.Extensions.Core\FluxDigital.Extensions.Core.csproj">
+    <ProjectReference Include="..\FluxDigital.Extensions.Sauron.Core\FluxDigital.Extensions.Sauron.Core.csproj">
       <Project>{bf91a7de-2360-478b-b052-99d3032e50a3}</Project>
-      <Name>FluxDigital.Extensions.Core</Name>
+      <Name>FluxDigital.Extensions.Sauron.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

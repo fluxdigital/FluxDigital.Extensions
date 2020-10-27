@@ -7,8 +7,8 @@
     <ProjectGuid>{BF91A7DE-2360-478B-B052-99D3032E50A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FluxDigital.Extensions.Core</RootNamespace>
-    <AssemblyName>FluxDigital.Extensions.Core</AssemblyName>
+    <RootNamespace>FluxDigital.Extensions.Sauron.Core</RootNamespace>
+    <AssemblyName>FluxDigital.Extensions.Sauron.Core</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

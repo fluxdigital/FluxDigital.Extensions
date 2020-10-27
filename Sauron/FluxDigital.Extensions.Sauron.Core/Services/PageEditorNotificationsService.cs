@@ -1,18 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
+using System.Runtime.Caching;
+using FluxDigital.Extensions.Sauron.Core.Constants;
 using Sitecore;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
-using System.Runtime.Caching;
-using System.Timers;
-using FluxDigital.Extensions.Core.Constants;
 using Sitecore.Data.Managers;
-using Sitecore.Diagnostics;
 
-namespace FluxDigital.Extensions.Core.Services
+namespace FluxDigital.Extensions.Sauron.Core.Services
 {
     /// <summary>
     /// Reads all page editor messages from the config item in Sitecore

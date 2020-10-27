@@ -1,2 +1,0 @@
-xcopy "C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Core\bin\Debug\FluxDigital.Extensions.Core.dll" "X:\Sites\local.icaew.com\Website\bin" /c /d /e /h /i /k /q /r /s /x /y
-xcopy "C:\Projects\FluxDigital.Extensions\FluxDigital.Extensions.Web\App_Config\Include" "X:\Sites\local.icaew.com\Website\App_Config\Include" /c /d /e /h /i /k /q /r /s /x /y

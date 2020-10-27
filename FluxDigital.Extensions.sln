@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxDigital.Extensions.Web", "FluxDigital.Extensions.Web\FluxDigital.Extensions.Web.csproj", "{8C7236FE-E493-4F6A-9B6E-55F489E46985}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxDigital.Extensions.Sauron.Web", "Sauron\FluxDigital.Extensions.Sauron.Web\FluxDigital.Extensions.Sauron.Web.csproj", "{8C7236FE-E493-4F6A-9B6E-55F489E46985}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxDigital.Extensions.Core", "FluxDigital.Extensions.Core\FluxDigital.Extensions.Core.csproj", "{BF91A7DE-2360-478B-B052-99D3032E50A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxDigital.Extensions.Sauron.Core", "Sauron\FluxDigital.Extensions.Sauron.Core\FluxDigital.Extensions.Sauron.Core.csproj", "{BF91A7DE-2360-478B-B052-99D3032E50A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sauron", "Sauron", "{FF94C5AE-BDBD-445B-8036-6D0C94FA6391}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8C7236FE-E493-4F6A-9B6E-55F489E46985} = {FF94C5AE-BDBD-445B-8036-6D0C94FA6391}
+		{BF91A7DE-2360-478B-B052-99D3032E50A3} = {FF94C5AE-BDBD-445B-8036-6D0C94FA6391}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0261B515-C8D7-484C-BDD5-63DAD4CDBC29}

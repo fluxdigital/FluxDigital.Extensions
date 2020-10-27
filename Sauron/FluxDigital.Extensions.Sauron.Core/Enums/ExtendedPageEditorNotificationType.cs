@@ -1,4 +1,4 @@
-﻿namespace FluxDigital.Extensions.Core.Enums
+﻿namespace FluxDigital.Extensions.Sauron.Core.Enums
 {
     public enum ExtendedPageEditorNotificationType
     {

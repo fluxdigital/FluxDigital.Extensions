@@ -1,10 +1,10 @@
-﻿using FluxDigital.Extensions.Core.Enums;
-using FluxDigital.Extensions.Core.Services;
+﻿using FluxDigital.Extensions.Sauron.Core.Enums;
+using FluxDigital.Extensions.Sauron.Core.Services;
 using Sitecore.Configuration;
 using Sitecore.Diagnostics;
 using Sitecore.Pipelines.GetPageEditorNotifications;
 
-namespace FluxDigital.Extensions.Core.Pipelines.PageEditorNotifications
+namespace FluxDigital.Extensions.Sauron.Core.Pipelines.PageEditorNotifications
 {
     public class ShowExperienceEditorHelpNotifications : GetPageEditorNotificationsProcessor
     {

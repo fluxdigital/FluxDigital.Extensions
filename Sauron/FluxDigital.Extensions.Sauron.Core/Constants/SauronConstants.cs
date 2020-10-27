@@ -1,4 +1,4 @@
-﻿namespace FluxDigital.Extensions.Core.Constants
+﻿namespace FluxDigital.Extensions.Sauron.Core.Constants
 {
     public class SauronConstants
     {
