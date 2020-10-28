@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Runtime.Caching;
-using FluxDigital.Extensions.Sauron.Core.Constants;
+using FluxDigital.Extensions.Sauron.Core._472.Constants;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Events;
 
-namespace FluxDigital.Extensions.Sauron.Core.Events
+namespace FluxDigital.Extensions.Sauron.Core._472.Events
 {
     /// <summary>
     /// Clears the cache of Sauron Help Text items After Saving

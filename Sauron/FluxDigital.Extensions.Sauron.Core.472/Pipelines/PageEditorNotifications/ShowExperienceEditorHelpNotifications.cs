@@ -1,10 +1,10 @@
-﻿using FluxDigital.Extensions.Sauron.Core.Enums;
-using FluxDigital.Extensions.Sauron.Core.Services;
+﻿using FluxDigital.Extensions.Sauron.Core._472.Enums;
+using FluxDigital.Extensions.Sauron.Core._472.Services;
 using Sitecore.Configuration;
 using Sitecore.Diagnostics;
 using Sitecore.Pipelines.GetPageEditorNotifications;
 
-namespace FluxDigital.Extensions.Sauron.Core.Pipelines.PageEditorNotifications
+namespace FluxDigital.Extensions.Sauron.Core._472.Pipelines.PageEditorNotifications
 {
     public class ShowExperienceEditorHelpNotifications : GetPageEditorNotificationsProcessor
     {
@@ -19,6 +19,8 @@ namespace FluxDigital.Extensions.Sauron.Core.Pipelines.PageEditorNotifications
             Assert.ArgumentNotNull(arguments, "arguments");
             if (arguments.ContextItem == null) return;
 
+            Log.Info($"Sauron Page Editor Notification service called", this.GetType());
+
             var contextItem = arguments.ContextItem;
             var templateName = contextItem.TemplateName;
             var templateId = contextItem.TemplateID;
@@ -31,7 +33,7 @@ namespace FluxDigital.Extensions.Sauron.Core.Pipelines.PageEditorNotifications
 
                 //add page editor notification
                 //var pageEditorNotificationType = new PageEditorNotificationType(); //TODO: ideally we would set a custom type here and make the view aware of it
-                var notification = new PageEditorNotification($"<div class=\"sauron-page-editor-notification\">{string.Format(intro, templateName)}{helpText}</div>",  (PageEditorNotificationType) ExtendedPageEditorNotificationType.Information);
+                var notification = new PageEditorNotification($"<div class=\"sauron-page-editor-notification\">{string.Format(intro, templateName)}{helpText}</div>", (PageEditorNotificationType)ExtendedPageEditorNotificationType.Information);
                 arguments.Notifications.Add(notification);
             }
         }
