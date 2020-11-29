@@ -2,6 +2,8 @@
 
 Sitecore Sauron is an open source Sitecore Module which allows you to display Messages, Instructions and Documentation in Experience Editor for specific page templates to assit Content Editors.
 
+![Sauron Logo](/Sauron/FluxDigital.Extensions.Sauron.Web/SitecorePackage/sauron-icon-128x128.png)
+
 ## Installation
 
 Use nuget install Sauron.
