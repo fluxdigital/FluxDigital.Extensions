@@ -26,15 +26,15 @@ Install-Package Sitecore-Sauron
 4. Add the Help Message Rich Text (you can include links here and other simple HTML elements if you wish).
 ![Sauron Edit](/Sauron/FluxDigital.Extensions.Sauron.Web/SitecorePackage/sauron-example-page.png)
 5. Ensure it's Enabled.
-6. Save and view the Page in Experience Editor. You should see your message at the top of the page similar to below:
+6. Save and view a Page which uses this template in Experience Editor. You should see your message at the top of the page similar to below:
 ![Sauron Message](/Sauron/FluxDigital.Extensions.Sauron.Web/SitecorePackage/sauron-message.png)
 
 ## Performance & Caching
-The module was tested with 100+ sub folders with a total of 379 page help message items. The first (uncached) load time for these is approximately 500 milliseconds, subsequent page loads are cached and take 0.02 - 0.03 milliseconds. With an handful of page help messages these numbers will be even lower so there should be little or no performance hit from this module. The default cache timeout is 24hrs and set in the config: `<setting name="SauronCacheTimeMins" value="1440" />`. The cache is also cleared when new page help messages are created or are updated. 
+The module was tested with 100+ sub folders with a total of 379 page help message items. The first (uncached) load time for these is approximately 500 milliseconds, subsequent page loads are cached and take 0.02 - 0.03 milliseconds. With an handful of page help messages the inital load is a few milliseconds so there should be little or no performance hit from this module. The default cache timeout is 24hrs and set in the config: `<setting name="SauronCacheTimeMins" value="1440" />`. The cache is also cleared when new page help messages are created or are updated. 
 
 ## Configuration
 
-The module configuration settings can be found here: xFluxDigital.Extensions.Sauron.config
+The module configuration settings can be found in the following config file: xFluxDigital.Extensions.Sauron.config
 
 You can disable the module be setting the value of this setting to false: `<setting name="SauronEnabled" value="true" />`
 
