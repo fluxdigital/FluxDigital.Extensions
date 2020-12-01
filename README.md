@@ -1,18 +1,19 @@
 # Sitecore Sauron
 
-Sitecore Sauron is an open source Sitecore Module which allows you to display Messages, Instructions and Documentation in Experience Editor for specific page templates to assit Content Editors. 
+Sitecore Sauron is an open source Sitecore Module which allows you to display Messages, Instructions and Documentation in Experience Editor for certain page templates to assist Content Editors. Full HTML support is provided which means you can use links, bullets, underline, bold and so forth within your messages.
+The idea for this module was born out creating a lot of new page templates and content editors being confused what the intention of the page templates is. Sauron solves this problem in a configurable and simple way.
 
 ![Sauron Logo](/Sauron/FluxDigital.Extensions.Sauron.Web/SitecorePackage/sauron-icon-128x128.png)
 
 ## Installation
 
-You can download one of the pre-build packages from the links below. T
+You can download one of the pre-build packages from the links below. 
 
 [Sitecore 8x version](https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/Sauron/FluxDigital.Extensions.Sauron.Web/SitecorePackage/Sitecore%20Sauron-1.0.0.zip)
 
-I am working on a version for Sitecore 9 and 10 but they are not complete yet.
+I am testing a package for Sitecore 9 and 10 so I should be able to release these soon.
 
-You will be able to use nuget install Sauron soon also like so.
+You will also soon be able to use nuget to install Sauron like so:
 
 ```pm
 Install-Package Sitecore-Sauron
@@ -27,6 +28,15 @@ Install-Package Sitecore-Sauron
 5. Ensure it's Enabled.
 6. Save and view the Page in Experience Editor. You should see your message at the top of the page similar to below:
 ![Sauron Message](/Sauron/FluxDigital.Extensions.Sauron.Web/SitecorePackage/sauron-message.png)
+
+## Performance & Caching
+The module was tested with 100+ sub folders with a total of 379 page help message items. The first (uncached) load time for these is approximately 500 milliseconds, subsequent page loads are cached and take 0.02 - 0.03 milliseconds. With an handful of page help messages these numbers will be even lower so there should be little or no performance hit from this module. The default cache timeout is 24hrs and set in the config: `<setting name="SauronCacheTimeMins" value="1440" />`. The cache is also cleared when new page help messages are created or are updated. 
+
+## Configuration
+
+The module configuration settings can be found here: xFluxDigital.Extensions.Sauron.config
+
+You can disable the module be setting the value of this setting to false: `<setting name="SauronEnabled" value="true" />`
 
 ## Contributing
 
