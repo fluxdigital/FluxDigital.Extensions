@@ -113,6 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Foundation\Foundation.Sloth.config" />
+    <Content Include="SitecorePackage\sitecore-sloth-logo-small.png" />
     <Content Include="sitecore\shell\Applications\Page Modes\SlothExperienceEditorExtension.js" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="SitecorePackage\Siteore Sloth-1.0.zip" />
