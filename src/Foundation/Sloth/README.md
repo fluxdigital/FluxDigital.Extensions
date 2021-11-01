@@ -10,9 +10,11 @@ Thanks to Kamruz for sharing the original code and ideas.
 
 ## Installation
 
-[You can download a pre-built package here](https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/src/Foundation/Sloth/code/SitecorePackage/Siteore%20Sloth-1.0.zip)
+[You can download a pre-built package here](https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/src/Foundation/Sloth/code/SitecorePackage/Siteore%20Sloth-1.0.zip) and install it in the usual way through Sitecore Package Manager.
 
 You will also soon be able to use nuget to install Sloth too
+
+Once installed you should find that experience editor scrolls you back to where you were on the page instead of to the top of the page when saving changes to components. If it doesn't check that the module istalled correctly and that SlothExperienceEditorExtension.js is loaded as a js resource.
 
 Sitecore Sloth has been tested with most versions of Sitecore from 9.1 up to Sitecore 10 update 2.
 
