@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.Caching;
 using FluxDigital.Extensions.Sauron.Core.Constants;
@@ -31,22 +32,24 @@ namespace FluxDigital.Extensions.Sauron.Core.Services
             var cacheTimeInMinutes = Settings.GetIntSetting("SauronCacheTimeMins", 5);
 
             //get enabled help text items
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
             var sauronCache = MemoryCache.Default;
             var pageHelpMessageItems = (List<Item>)sauronCache[SauronConstants.ConfigItemsCacheKey];
 
             if (pageHelpMessageItems == null)
             {
                 //if not in cache then read from Sitecore
-                //Stopwatch sw = new Stopwatch();
-                //sw.Start();
                 pageHelpMessageItems = GetHelpItemsRecursive(basePageConfigItem, 1, sauronPageTemplateGuid, enabledfieldName);
-                Log.Info($"Sauron page help text items: {pageHelpMessageItems.Count}", this.GetType());
-                //sw.Stop();
-                //Log.Info($"Query to get Sauron page help text items took: {sw.Elapsed.TotalMilliseconds}", this.GetType());
                 CacheItemPolicy policy = new CacheItemPolicy();
                 policy.AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(cacheTimeInMinutes);
                 sauronCache.Set(SauronConstants.ConfigItemsCacheKey, pageHelpMessageItems, policy);
             }
+
+            Log.Info($"Sauron page help text items: {pageHelpMessageItems.Count}", this.GetType());
+            sw.Stop();
+            Log.Info($"Query to get Sauron page help text items took: {sw.Elapsed.TotalMilliseconds}", this.GetType());
+
             //get top one matching item
             var pageHelpTextItem = pageHelpMessageItems?.Find(i => i.Fields[templateIdFieldName].Value == pageTemplateId.ToString());
             if (pageHelpTextItem != null)
