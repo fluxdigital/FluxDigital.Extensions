@@ -16,7 +16,7 @@ You will also soon be able to use nuget to install Sloth too
 
 Once installed you should find that experience editor scrolls you back to where you were on the page instead of to the top of the page when saving changes to components. If it doesn't check that the module istalled correctly and that SlothExperienceEditorExtension.js is loaded as a js resource.
 
-Sitecore Sloth has been tested with most versions of Sitecore from 9.1 up to Sitecore 10 update 2.
+Sitecore Sloth has been tested with most versions of Sitecore from 9.1 up to 9.3. Sitecore 10 update 2 seems to have resolved this issue.
 
 ## Contributing
 
