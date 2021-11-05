@@ -116,7 +116,7 @@
     <Content Include="SitecorePackage\sitecore-sloth-logo-small.png" />
     <Content Include="sitecore\shell\Applications\Page Modes\SlothExperienceEditorExtension.js" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <Content Include="SitecorePackage\Siteore Sloth-1.0.zip" />
+    <Content Include="SitecorePackage\Sitecore Sloth-1.0.zip" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\..\GlobalAssemblyInfo.cs">
