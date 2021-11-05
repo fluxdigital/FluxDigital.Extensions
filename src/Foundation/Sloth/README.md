@@ -14,7 +14,7 @@ Thanks to Kamruz for sharing the original code and ideas.
 
 In this example of a simple bootstrap 5 Site you can see I edit a card component properties and experience editor scrolls me half way up the page when saving. Also you can see the same thing happens when I change datasources. One thing to note is that I've seen that sometimes this happens for some components and sometimes this doesn't so the issue seems intermittent.
 
-![Experience Editor Issue](sloth-experience-editor-issue.gif)
+![Experience Editor Issue](/src/Foundation/Sloth/code/Videos/sloth-experience-editor-issue.gif)
 
 ### Sloth Demo
 
