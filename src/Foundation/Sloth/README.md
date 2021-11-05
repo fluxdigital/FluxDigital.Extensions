@@ -12,13 +12,13 @@ Thanks to Kamruz for sharing the original code and ideas.
 
 ### Experience Editor Issue
 
-In this example of a simple bootstrap 5 Site you can see I edit a card component properties and experience editor scrolls me half way up the page when saving. Also you can see the same thing happens when I change datasources. One thing to note is that I've seen that sometimes this happens for some components and sometimes this doesn't so the issue seems intermittent.
+In this example of a simple Bootstrap 5 Site, you can see when a Card components properties are edited in experience editor it scrolls the editor half way up the page when saving. Also you can see the same thing happens when a datasource is added to a Card. One thing to note is that I've seen that sometimes this happens for some components and sometimes it doesn't so the issue seems intermittent.
 
 ![Experience Editor Issue](/src/Foundation/Sloth/code/Videos/sloth-experience-editor-issue.gif)
 
 ### Sloth Demo
 
-When performing the same tasks in as in the previous video (editing component properties and changing datasources) you can see that Experience Editor takes you back to where you were afte saving.
+When performing the same tasks in as in the previous video (editing component properties & adding datasources) you can see that Experience Editor takes you back to where you were after saving.
 
 ![Sloth Demo](/src/Foundation/Sloth/code/Videos/sloth-demo.gif)
 
@@ -32,7 +32,7 @@ You will also soon be able to use nuget to install Sloth too
 
 Once installed you should find that experience editor scrolls you back to where you were on the page instead of to the top of the page when saving changes to components. If it doesn't check that the module istalled correctly and that SlothExperienceEditorExtension.js is loaded as a js resource.
 
-Sitecore Sloth has been tested with most versions of Sitecore from 9.1 up to 9.3. Sitecore 10 update 2 seems to have resolved this issue.
+Sitecore Sloth has been tested with most versions of Sitecore from 9.1 up to 9.3. From initial testing Sitecore 10.1  update 2 seems to have resolved this issue so Sloth doesn't seem to be needed, but I'm not sure about other releases of Sitecore 10.x. If this is still an issue please let me know.
 
 ## Contributing
 
