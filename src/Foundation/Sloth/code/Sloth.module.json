@@ -1,0 +1,13 @@
+{
+  "namespace": "FluxDigital.Foundation.Sloth",
+  "items": {
+    "includes": [
+      {
+        "name": "templates",
+        "path": "/sitecore/templates/Foundation/Sloth",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "itemAndDescendants"
+      }
+    ]
+  }
+}

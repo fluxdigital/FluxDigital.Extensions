@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>FluxDigital.Foundation.Sloth</id>
+    <version>1.1.0.0</version>
+    <title>Sitecore Sloth</title>
+    <authors>Adam Seabridge</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/fluxdigital/FluxDigital.Extensions/tree/master/src/Foundation/Sloth</projectUrl>
+    <iconUrl>https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/src/Foundation/Sloth/code/SitecorePackage/sitecore-sloth-logo-small.png</iconUrl>
+    <description>Sitecore Sloth is an open source module which prevents experience editor from scrolling the user up the page when adding new components, editing datasources and workflow.</description>
+    <releaseNotes>Initial NuGet package release.</releaseNotes>
+    <copyright>Copyright © 2021</copyright>
+    <tags>Sitecore Module Experience Editor</tags>
+  </metadata>
+  <files>
+    <file src="..\sitecore\**\*.*" target="content\sitecore" />
+    <file src="..\App_Config\Include\Foundation\Foundation.Sloth.config" target="content\App_Config\Include\Foundation\Foundation.Sloth\"/>
+    <file src="..\bin\FluxDigital.Foundation.Sloth.dll" target="lib\net471" />
+    <file src="..\items\**\*.*" target="content\items" />
+  </files>
+</package>

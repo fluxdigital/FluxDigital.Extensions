@@ -1,0 +1,46 @@
+﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
+---
+File: |
+  C:\Projects\FluxDigital.Extensions\src\Foundation\Sloth\code\items\templates\Sloth\Sloth Settings\Settings.yml
+ID: "4254fa0e-e345-4cb7-bf68-08c1427f7c19"
+Parent: "7e080a41-83f2-48ae-8fdc-a204dadd37b5"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/Sloth/Sloth Settings/Settings
+Signature: +vWZCvZO2AOoilT5AiO5gNXSzswUSvqPduKboYJonns=
+Modified: 637735691971537902
+---
+File: |
+  C:\Projects\FluxDigital.Extensions\src\Foundation\Sloth\code\items\templates\Sloth\Sloth Settings.yml
+ID: "7e080a41-83f2-48ae-8fdc-a204dadd37b5"
+Parent: "32b53bf9-2b8e-4c4b-a9ad-d0f7cb7793c7"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Foundation/Sloth/Sloth Settings
+Signature: Uw5+neCukq1z9oxw9Q6dYR3uCFYsMG6qiAVq/YV+7yg=
+Modified: 637735691971527895
+---
+File: |
+  C:\Projects\FluxDigital.Extensions\src\Foundation\Sloth\code\items\templates\Sloth.yml
+ID: "32b53bf9-2b8e-4c4b-a9ad-d0f7cb7793c7"
+Parent: "b26bd035-8d0a-4df3-8f67-2de3c7fdd74a"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Foundation/Sloth
+Signature: GiZ5pgY+E8u/terOzu7G4syYu3K9N9zPCBCUL76KU9M=
+Modified: 637735691971497887
+---
+File: |
+  C:\Projects\FluxDigital.Extensions\src\Foundation\Sloth\code\items\templates\Sloth\Sloth Settings\__Standard Values.yml
+ID: "072abd79-602f-473b-8c60-cb8bd34ba4c6"
+Parent: "7e080a41-83f2-48ae-8fdc-a204dadd37b5"
+Template: "7e080a41-83f2-48ae-8fdc-a204dadd37b5"
+Path: /sitecore/templates/Foundation/Sloth/Sloth Settings/__Standard Values
+Signature: lTr2QQzMqGIzK+6ULH5mKL6i06AZSttFaD3Q6m1GEDQ=
+Modified: 637735691971567888
+---
+File: |
+  C:\Projects\FluxDigital.Extensions\src\Foundation\Sloth\code\items\templates\Sloth\Sloth Settings\Settings\Enabled.yml
+ID: "d20d742f-44f4-43b3-866f-baf82e40c5f7"
+Parent: "4254fa0e-e345-4cb7-bf68-08c1427f7c19"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/Sloth/Sloth Settings/Settings/Enabled
+Signature: GOrOgNerlvPOmcdwWa9C6a85NBy6qHEJn3OdsEgaYXc=
+Modified: 637735691971557885
