@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Type="http://schemas.microsoft.com/packaging/2010/07/manifest" Target="/FluxDigital.Foundation.Sloth.nuspec" Id="R2CBF10F725AF28BD" />
+  <Relationship Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="/package/services/metadata/core-properties/d39a9843b11b48bbb2d1c6fff6977dce.psmdcp" Id="RE1EFD26BAB146D44" />
+</Relationships>

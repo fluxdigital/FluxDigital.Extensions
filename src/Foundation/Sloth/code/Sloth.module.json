@@ -7,6 +7,12 @@
         "path": "/sitecore/templates/Foundation/Sloth",
         "allowedPushOperations": "createUpdateAndDelete",
         "scope": "itemAndDescendants"
+      },
+      {
+        "name": "sitecore sloth",
+        "path": "/sitecore/system/Modules/Sitecore Sloth",
+        "allowedPushOperations": "createUpdateAndDelete",
+        "scope": "SingleItem"
       }
     ]
   }

@@ -2,7 +2,7 @@
 ID: "d20d742f-44f4-43b3-866f-baf82e40c5f7"
 Parent: "4254fa0e-e345-4cb7-bf68-08c1427f7c19"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Foundation/Sloth/Sloth Settings/Settings/Enabled
+Path: /sitecore/templates/Foundation/Sloth/Sitecore Sloth/Sloth Settings/Enabled
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type

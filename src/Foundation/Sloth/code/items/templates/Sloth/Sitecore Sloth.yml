@@ -2,11 +2,11 @@
 ID: "7e080a41-83f2-48ae-8fdc-a204dadd37b5"
 Parent: "32b53bf9-2b8e-4c4b-a9ad-d0f7cb7793c7"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Foundation/Sloth/Sloth Settings
+Path: /sitecore/templates/Foundation/Sloth/Sitecore Sloth
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: /~/icon/office/32x32/reset_settings.png
+  Value: "/sitecore modules/Sloth/Assets/sloth-logo-32.png"
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
@@ -23,11 +23,11 @@ Languages:
       Value: 20211126T235155Z
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f74d7134-0f2c-4e26-94ee-97e3bee1404b"
+      Value: "fea76cef-ee98-419f-8f82-23deef52f0b5"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\admin
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211126T235547Z
+      Value: 20211128T210058Z
