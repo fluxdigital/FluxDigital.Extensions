@@ -23,6 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{DF2686FF-426
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxDigital.Project.Web", "src\Project\Web\code\FluxDigital.Project.Web.csproj", "{1BF51ECB-6CC6-4570-BEED-549C63AEA788}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{21EE2CD6-C406-46D4-B27C-1D8897F1C0EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreApiTestConsole", "SitecoreApiTestConsole\SitecoreApiTestConsole.csproj", "{DDDFCB1B-A378-4685-8CC2-5A8324FE5704}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,10 @@ Global
 		{1BF51ECB-6CC6-4570-BEED-549C63AEA788}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BF51ECB-6CC6-4570-BEED-549C63AEA788}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BF51ECB-6CC6-4570-BEED-549C63AEA788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDDFCB1B-A378-4685-8CC2-5A8324FE5704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDDFCB1B-A378-4685-8CC2-5A8324FE5704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDDFCB1B-A378-4685-8CC2-5A8324FE5704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDDFCB1B-A378-4685-8CC2-5A8324FE5704}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +69,7 @@ Global
 		{0D48C0CD-129C-4C7F-B3E8-1E6E85688D5E} = {AA11D36D-78B5-4024-B942-74428F07780F}
 		{DF2686FF-4267-4EEA-B3AA-96884B52A98D} = {AD1505F6-1D0A-42AE-8C17-88447A4B4FC9}
 		{1BF51ECB-6CC6-4570-BEED-549C63AEA788} = {DF2686FF-4267-4EEA-B3AA-96884B52A98D}
+		{DDDFCB1B-A378-4685-8CC2-5A8324FE5704} = {21EE2CD6-C406-46D4-B27C-1D8897F1C0EF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0261B515-C8D7-484C-BDD5-63DAD4CDBC29}

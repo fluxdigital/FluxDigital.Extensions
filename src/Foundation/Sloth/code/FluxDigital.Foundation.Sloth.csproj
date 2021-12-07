@@ -123,6 +123,7 @@
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="SitecorePackage\Sitecore Sloth-1.0.zip" />
     <Content Include="Sloth.module.json" />
+    <Content Include="SitecorePackage\Sitecore Sloth 1.1 - For Sitecore 10-1 Plus.zip" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\..\GlobalAssemblyInfo.cs">
