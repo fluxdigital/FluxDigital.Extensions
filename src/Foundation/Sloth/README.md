@@ -32,18 +32,20 @@ When performing the same tasks in as in the previous video (editing component pr
 
 You can download a pre-built package below and install it in the usual way through Sitecore Package Manager:
 [v1.0 for all versions of Sitecore](https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/src/Foundation/Sloth/code/SitecorePackage/Sitecore%20Sloth-1.0.zip)  
+
 [v1.1 for Sitecore 10.1 and 10.2](https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/src/Foundation/Sloth/code/SitecorePackage/Sitecore%20Sloth%201.1%20-%20For%20Sitecore%2010-1%20Plus.zip) 
+
 [v1.1 for Sitecore 8.0-10.0](https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/src/Foundation/Sloth/code/SitecorePackage/Sitecore%20Sloth%201.1%20-%20For%20Sitecore%208-10.zip) 
-
-Below is a demo video of installing the package:
-
-![Install](/src/Foundation/Sloth/code/Videos/sloth-install.gif)
 
 You can also install version 1.1 of Sloth via Nuget like so if using Sitecore 10.1 or above:
 
 ```
 Install-Package FluxDigital.Foundation.Sloth -Version 1.1.0
 ```
+
+Below is a demo video of installing the package:
+
+![Install](/src/Foundation/Sloth/code/Videos/sloth-install.gif)
 
 Once installed you should find that experience editor scrolls you back to where you were on the page instead of to the top of the page when saving changes to components. If it doesn't check that the module istalled correctly and that SlothExperienceEditorExtension.js is loaded as a js resource.
 
