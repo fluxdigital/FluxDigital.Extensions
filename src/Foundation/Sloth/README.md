@@ -8,9 +8,10 @@ Sitecore Sloth has been created as an Foundation Module following Helix conventi
 
 Thanks to Kamruz for sharing the original code and ideas.
 
-# Changelog 
+## Changelog
 
 v1.0 - Initial Release
+
 v1.1 - Added support for enabling and disabling Sloth. Also supports install of items via Items as Resource files for Sitecore 10.1 and above and added 1.1 package to Nuget.
 
 ## Experience Editor Issue & Sloth Demo
