@@ -44,6 +44,8 @@ You can also install version 1.1 of Sloth via Nuget like so if using Sitecore 10
 Install-Package FluxDigital.Foundation.Sloth -Version 1.1.0
 ```
 
+**Important:** If you are using 1.1 of the module then please ensure you enable the module here and save the item after installing: /sitecore/system/Modules/Sitecore Sloth
+
 Below is a demo video of installing the package:
 
 ![Install](/src/Foundation/Sloth/code/Videos/sloth-install.gif)
