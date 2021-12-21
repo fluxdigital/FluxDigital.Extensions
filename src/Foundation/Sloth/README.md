@@ -31,11 +31,12 @@ When performing the same tasks in as in the previous video (editing component pr
 ## Installation
 
 You can download a pre-built package below and install it in the usual way through Sitecore Package Manager:
-[v1.0 for all versions of Sitecore](https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/src/Foundation/Sloth/code/SitecorePackage/Sitecore%20Sloth-1.0.zip)  
 
-[v1.1 for Sitecore 10.1 and 10.2](https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/src/Foundation/Sloth/code/SitecorePackage/Sitecore%20Sloth%201.1%20-%20For%20Sitecore%2010-1%20Plus.zip) 
+- [v1.0 for all versions of Sitecore](https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/src/Foundation/Sloth/code/SitecorePackage/Sitecore%20Sloth-1.0.zip)  
 
-[v1.1 for Sitecore 8.0-10.0](https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/src/Foundation/Sloth/code/SitecorePackage/Sitecore%20Sloth%201.1%20-%20For%20Sitecore%208-10.zip) 
+- [v1.1 for Sitecore 10.1 and 10.2](https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/src/Foundation/Sloth/code/SitecorePackage/Sitecore%20Sloth%201.1%20-%20For%20Sitecore%2010-1%20Plus.zip) 
+
+- [v1.1 for Sitecore 8.0-10.0](https://github.com/fluxdigital/FluxDigital.Extensions/blob/master/src/Foundation/Sloth/code/SitecorePackage/Sitecore%20Sloth%201.1%20-%20For%20Sitecore%208-10.zip) 
 
 You can also install version 1.1 of Sloth via Nuget like so if using Sitecore 10.1 or above:
 
